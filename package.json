@@ -1,0 +1,57 @@
+{
+  "name": "adi-d4a",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "vite build",
+    "lint": "oxlint .",
+    "preview": "vite preview",
+    "test": "npm run test:unit && npm run test:server",
+    "dev:api": "node --watch server/index.js",
+    "dev:web": "vite",
+    "start": "node server/index.js",
+    "db:migrate": "node server/cli.js migrate",
+    "db:seed": "node server/cli.js seed",
+    "db:reset": "node server/cli.js reset",
+    "demo:load": "node scripts/demo.js",
+    "demo:reset": "node scripts/demo.js reset",
+    "test:unit": "vitest run",
+    "test:server": "node --test server/*.test.js shared/*.test.js",
+    "test:e2e": "playwright test",
+    "admin:promote": "node server/cli.js promote",
+    "deploy:prepare": "node scripts/prepare-deployment.js"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "express": "^5.3.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.57.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.18.4",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "concurrently": "^10.0.6",
+    "jsdom": "^29.1.1",
+    "oxlint": "^1.81.0",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.13",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=24.22.0 <25"
+  }
+}

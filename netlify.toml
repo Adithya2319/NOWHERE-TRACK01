@@ -1,0 +1,15 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+# Replace via npm run deploy:prepare -- https://your-persistent-backend
+[[redirects]]
+from = "/api/*"
+to = "https://configure-campus360-backend.invalid/api/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

@@ -1,0 +1,38 @@
+{
+  "subjects": [
+    { "name": "Applied Mathematics", "credits": 4, "category": "core" },
+    { "name": "Physics", "credits": 4, "category": "core" },
+    { "name": "Chemistry", "credits": 3, "category": "core" },
+    { "name": "Engineering Mechanics", "credits": 4, "category": "core" },
+    { "name": "Basic Electrical Engineering", "credits": 3, "category": "core" },
+    { "name": "C Programming", "credits": 3, "category": "core" },
+    { "name": "DBMS", "credits": 4, "category": "core" },
+    { "name": "Data Structures", "credits": 4, "category": "core" },
+    { "name": "Computer Networks", "credits": 3, "category": "elective" },
+    { "name": "Digital Logic", "credits": 3, "category": "elective" }
+  ],
+  "attendance": [
+    { "subject": "Applied Mathematics", "present": 18, "total": 22 },
+    { "subject": "Physics", "present": 15, "total": 20 },
+    { "subject": "Chemistry", "present": 17, "total": 18 },
+    { "subject": "DBMS", "present": 17, "total": 24 },
+    { "subject": "C Programming", "present": 16, "total": 20 },
+    { "subject": "Engineering Mechanics", "present": 13, "total": 19 },
+    { "subject": "Basic Electrical Engineering", "present": 12, "total": 18 },
+    { "subject": "Computer Networks", "present": 14, "total": 17 },
+    { "subject": "Digital Logic", "present": 16, "total": 19 },
+    { "subject": "Data Structures", "present": 15, "total": 18 }
+  ],
+  "deadlines": [
+    { "title": "DBMS lab report", "subject": "DBMS", "priority": "High", "dueDate": "2026-10-16" },
+    { "title": "Physics viva prep", "subject": "Physics", "priority": "Medium", "dueDate": "2026-10-18" },
+    { "title": "Applied Maths assignment", "subject": "Applied Mathematics", "priority": "High", "dueDate": "2026-10-20" },
+    { "title": "Chemistry practical journal", "subject": "Chemistry", "priority": "Low", "dueDate": "2026-10-25" },
+    { "title": "C Programming mini project", "subject": "C Programming", "priority": "High", "dueDate": "2026-10-22" },
+    { "title": "Data Structures quiz prep", "subject": "Data Structures", "priority": "Medium", "dueDate": "2026-10-24" },
+    { "title": "Analog electronics sheet", "subject": "Digital Logic", "priority": "Low", "dueDate": "2026-10-31" },
+    { "title": "Circuit simulation lab", "subject": "Basic Electrical Engineering", "priority": "High", "dueDate": "2026-10-29" },
+    { "title": "Physics notes review", "subject": "Physics", "priority": "Medium", "dueDate": "2026-11-03" },
+    { "title": "Innovation challenge submission", "subject": "Engineering Mechanics", "priority": "High", "dueDate": "2026-11-05" }
+  ]
+}
